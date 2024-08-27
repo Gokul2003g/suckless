@@ -8,10 +8,10 @@ static const Block blocks[] = {
     {"] [", "sb-cpu", 1, 10},
     {"] [", "sb-battery", 60, 1},
     {"] [", "sb-clock", 1, 1},
-    {"] ", "sb-clock", 1, 1},
+    {"] ", "", 0, 0},
 };
 
 // sets delimeter between status commands. NULL character ('\0') means no
 // delimeter.
-static char delim[] = "";
-static unsigned int delimLen = 5;
+static char delim[] = " ";
+static unsigned int delimLen = 2;
